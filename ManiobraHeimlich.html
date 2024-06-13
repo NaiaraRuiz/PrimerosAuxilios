@@ -27,7 +27,7 @@
                       <div class="collapse navbar-collapse   justify-content-end" id="navbarSupportedContent">
                           <ul class="navbar-nav">
                               <li class="nav-item dropdown mx-3 ">
-                                  <div class="d-flex"><a class="nav-link dropdown-toggle text-light " href="#" role="button"
+                                  <a class="nav-link dropdown-toggle text-light " href="#" role="button"
                                       data-bs-toggle="dropdown" aria-expanded="false">
                                       Situaciones de emergencia
                                   </a>
@@ -48,7 +48,7 @@
                                               </ul>
                                           </li>
                                       </ul>
-                                  </div>
+                                  
                               </li>
                               <li class="nav-item dropdown mx-3  ">
                                   <a class="nav-link dropdown-toggle text-light " href="#" role="button"
@@ -83,7 +83,7 @@
 
         <div class="row my-5">
             <div class="col-12 d-flex justify-content-center">
-                <div class="w-50 bg-danger rounded-4 p-4">
+                <div class="w-75 bg-danger rounded-4 p-4">
                     <div class="d-flex justify-content-center   flex-wrap">
                         <img src="assets/img/t.png" class="text-center px-3" alt="">
                         <div>
@@ -109,16 +109,16 @@
         </div>
         <div class="row my-5">
             <div class="col-12 d-flex justify-content-center">
-                <div class="w-50 bg-danger rounded-4 p-4" >
+                <div class="w-75 bg-danger rounded-4 p-4" >
                     <div class="d-flex justify-content-center">
                         <h3 class="bg-body-secondary rounded-3 mb-4  text-center p-1 text-danger">¿Qué hacer?</h3>
                     </div>
                     <div class="d-flex flex-column flex-lg-row  justify-content-around text-white ">
-                        <div class="d-flex flex-column align-items-center  border border-1 border-white mx-1 my-2 rounded-4">
+                        <div class="d-flex flex-column align-items-center  border border-1 border-white mx-1 my-2 rounded-4 w-100">
                             <div class="fs-1 px-1 text-center">1</div>
                             <div class="text-center w-75"><p>Comprueba que la víctima se está  <strong>atragantando</strong> con un cuerpo extraño.</p></div>
                         </div>
-                        <div class="d-flex flex-column align-items-center border border-1 border-white mx-1 my-2 rounded-4">
+                        <div class="d-flex flex-column align-items-center border border-1 border-white mx-1 my-2 rounded-4 w-100">
                             <div class="fs-1 px-1 text-center">2</div>
                             <div class="text-center w-75"><p>Pide ayuda a otra persona para que llame al <strong>112</strong></p></div>
                         </div>
@@ -128,7 +128,7 @@
         </div>
         <div class="row my-5">
             <div class="col-12 d-flex justify-content-center">
-                <div class="w-50 bg-danger rounded-4 p-4 ">
+                <div class="w-75 bg-danger rounded-4 p-4 ">
                     <div class="d-flex flex-column align-items-center text-white">
                         <div class="fs-1 px-1 text-center ">3</div>
                         <div class="text-center w-75"><p>Con la víctima inclinada hacia adelante, administrar <strong>5 golpes secos en la espalda</strong>, justo entre los omóplatos.</p></div>
@@ -147,9 +147,9 @@
             </div>
         </div>
         <div class="row mt-4 py-3">
-            <div class="col-12 d-flex justify-content-center">
-                <a href="assets/descargables/Infografia información de habitos saludables sencillo rosa.pdf" download="Maniobra-De-Heimlich.pdf" class="btn btn-danger w-25 mx-2" >Descargar archivo PDF</a>
-                <a href="assets/descargables/Infografia información de habitos saludables sencillo rosa.png" download="Maniobra-De-Heimlich.png" class="btn btn-danger w-25 mx-2" >Descargar archivo PNG</a>
+            <div class="col-12 d-flex flex-column flex-lg-row align-content-center justify-content-center">
+                <a href="assets/descargables/Infografia información de habitos saludables sencillo rosa.pdf" download="Maniobra-De-Heimlich.pdf" class="btn btn-danger my-2 mx-lg-2" >Descargar archivo PDF</a>
+                <a href="assets/descargables/Infografia información de habitos saludables sencillo rosa.png" download="Maniobra-De-Heimlich.png" class="btn btn-danger my-2 mx-lg-2" >Descargar archivo PNG</a>
             </div>
         </div>
     </main>
@@ -172,19 +172,20 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var dropdowns = document.querySelectorAll('.dropdown-submenu .dropdown-toggle');
-            dropdowns.forEach(function (dropdown) {
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+              var dropdowns = document.querySelectorAll('.dropdown-submenu .dropdown-toggle');
+              dropdowns.forEach(function (dropdown) {
                 dropdown.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    var submenu = this.nextElementSibling;
-                    submenu.classList.toggle('show');
+                  e.preventDefault();
+                  e.stopPropagation();
+                  var submenu = this.nextElementSibling;
+                  submenu.classList.toggle('show');
                 });
+              });
             });
-        });
-    </script>
+          </script>
+    
 </body>
 
 
